@@ -1,0 +1,37 @@
+<h1>Redi2Medi</h1>
+<p>Don't ever forget to take your pill with our REDI2MEDI APP</p>
+{{#if error}}
+    <p><strong>{{error}}</strong></p>
+{{/if}}
+
+<form method="post" action="/schedule">
+    <div class="form-floating">
+        <label>Your name:</label>
+        <br />
+        <input class="form-control" id="floatingInput" type="text" name="name" value="{{name}}" />
+    </div>
+    <div class="form-floating">
+        <label>Your medication information</label>
+        <br />
+        <input class="form-control" id="floatingInput" type="text" name="medication" value="{{medication}}" />
+    </div>
+    <div class="form-floating">
+        <label>Name your reminder:</label>
+        <br />
+        <input class="form-control" id="floatingInput" type="text" name="remname" value="{{remname}}" />        
+    </div>
+    <div class="form-floating">
+        <label>Your mobile number:</label>
+        <br />
+        <input class="form-control" id="floatingInput" type="tel" name="number" value="{{number}}" />        
+    </div>
+    <div>
+        <label>Date and Time:</label>
+        <br />
+        <input type="date" name="date" value="{{date}}" />
+        <input type="time" name="time" value="{{time}}" />
+    </div>
+    <div>
+        <button type="submit" class="w-100 btn btn-lg btn-outline-success">Create a reminder</button>
+    </div>
+</form>

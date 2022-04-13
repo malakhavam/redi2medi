@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS medi_db;
+
+CREATE DATABASE medi_db;
