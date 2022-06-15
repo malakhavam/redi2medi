@@ -31,7 +31,7 @@ app.post('/reminder', function(req, res){
 // Process an incoming reminder
 app.post('/schedule', function(req, res) {
     
-    // Check if user has provided input for all form fields
+    // Check if User has provided input for all form fields
     if (!req.body.name || !req.body.medication || !req.body.remname || !req.body.number || !req.body.date || !req.body.time
         || req.body.name == '' || req.body.medication == '' || req.body.remname == '' || req.body.number == '' 
         || req.body.date == '' || req.body.time == '') {

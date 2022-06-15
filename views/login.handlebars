@@ -1,4 +1,4 @@
-<h1>Redi2Medi</h1>      
+<h1>Redi2Medi</h1>    
       
       <h3>Click here to continue as a guest</h3>
     <form method="post" action="/reminder">
@@ -8,7 +8,8 @@
   <div class="row justify-space-between-md">
   <div class="login-card">
     <h4 class="page-title">Never miss taking a pill again</h4>
-    <form class="form login-form">
+    <form method="post" action="/reminder">
+      <form class="form login-form">
       <div class="form-floating">
         <label for="email-login">Email:</label>
         <br/>
@@ -20,13 +21,16 @@
         <input class="form-control" type="password" id="password-login" />
       </div>
       <div class="form-floating">
+       
         <button class="w-100 btn btn-lg btn-outline-success" type="submit">Login</button>
         <br/>
       </div>
+      </form>
     </form>
   </div>
   <div class="login-card">
     <h4 class="page-title">Sign Up for free account</h4>
+  <form method="post" action="/reminder">
       <form class="form signup-form" method="post" action="/reminder">
       <div class="form-floating">
         <label for="username-signup">Username:</label>
@@ -47,8 +51,15 @@
         <button class="w-100 btn btn-lg btn-outline-success" type="submit">Sign Up</button>
       </div> 
     </form>
+  </form>
   </div>
   </div>
+
+ 
+      
+
+         
+   
 
 
 <script src="./js/login.js"></script>

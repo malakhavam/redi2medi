@@ -50,9 +50,9 @@ body {
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+  -webkit-User-select: none;
+  -moz-User-select: none;
+  User-select: none;
 }
 
 .btn {
@@ -68,11 +68,12 @@ body {
     </head>
     <body class="form-signin text-center">
       <nav>
-    <!-- If the user is logged in, show a logout button -->
+    <!-- If the User is logged in, show a logout button -->
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    
+    <!-- Otherwise, show a link to login -->
+    <a href="/login">Login</a>
     {{/if}}
   </nav>  
         
